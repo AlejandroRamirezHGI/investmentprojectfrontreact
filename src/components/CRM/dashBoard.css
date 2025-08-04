@@ -1,0 +1,98 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Tarjetas (Cards) */
+.card {
+  background-color: white;
+  color: #0a2656;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  color: #1e3c72;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.card-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Secciones de gráficos */
+.chart-box,
+.chart-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a2656;
+  margin-bottom: 1rem;
+}
+
+.chart-section {
+  grid-column: span 2;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .chart-section {
+    grid-column: span 1;
+  }
+}
+
+.chat-float-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.chat-float-btn:hover {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:  #256b99;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
