@@ -22,6 +22,11 @@
   justify-content: space-between;
 }
 
+.chatbox-header span:hover{
+  color: rgb(187, 7, 7);
+  font-size: 0.98em;
+}
+
 .chatbox-messages {
   flex: 1;
   padding: 1rem;
@@ -62,4 +67,19 @@
   color: white;
   border: none;
   border-radius: 0.5rem;
+}
+
+
+.chatbox-input button:hover {
+  padding: 0 1rem;
+  background-color: rgb(6, 108, 204);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.chatbox-x-btn:hover{
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 0, 0); 
+  border-color: #ffffff;
 }
