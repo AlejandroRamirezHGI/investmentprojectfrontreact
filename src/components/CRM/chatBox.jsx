@@ -15,7 +15,7 @@ export default function ChatBox({ type, onClose }) {
     <div className="chatbox">
       <div className="chatbox-header">
         <span>{type === "soporte" ? "Soporte IA" : "Asesor Financiero"}</span>
-        <button onClick={onClose}>×</button>
+        <button class="chatbox-x-btn" onClick={onClose}>×</button>
       </div>
       <div className="chatbox-messages">
         {messages.map((msg, idx) => (
